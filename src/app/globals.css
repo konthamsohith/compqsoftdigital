@@ -1,6 +1,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --navbar-bg: #ffffff;
+  --hero-bg: #050505;
+  --primary-orange: #d95c14;
+  --primary-orange-hover: #e86b24;
+  --text-muted: #a3a3a3;
+  --text-white: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,7 +32,7 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

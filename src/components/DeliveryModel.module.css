@@ -1,0 +1,211 @@
+.section {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 3rem 0;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.videoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.cardContainer {
+  position: relative;
+  z-index: 10;
+  margin-left: 7.2%;
+  width: 100%;
+  max-width: 520px;
+}
+
+.whiteCard {
+  background-color: #ffffff;
+  padding: 3.5rem 3rem;
+  border-radius: 6px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.6rem;
+}
+
+.quote {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.bodyWithTrack {
+  display: flex;
+  align-items: stretch;
+  gap: 1.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.trackContainer {
+  position: relative;
+  width: 1px;
+  background-color: #cbd5e1;
+  flex-shrink: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.trackThumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5px;
+  height: 80px;
+  background-color: #475569;
+}
+
+.paragraph {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.discoverButton {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  background-color: #ffffff;
+  border: 1px solid #64748b;
+  border-radius: 6px;
+  color: #1e293b;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.discoverButton:hover {
+  border-color: #0078d4;
+  color: #0078d4;
+  box-shadow: 0 2px 8px rgba(0, 120, 212, 0.15);
+}
+
+.buttonText {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.62rem 1.25rem;
+}
+
+.buttonDivider {
+  width: 1px;
+  height: 26px;
+  background-color: #94a3b8;
+}
+
+.buttonArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.62rem 1rem;
+  transition: transform 0.2s ease;
+}
+
+.discoverButton:hover .buttonArrow {
+  transform: translateX(3px);
+}
+
+.carouselIndicators {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  z-index: 20;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #94a3b8;
+  box-sizing: border-box;
+}
+
+.activeDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1.5px solid #0078d4;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.activeDot::after {
+  content: '';
+  width: 3.5px;
+  height: 3.5px;
+  border-radius: 50%;
+  background-color: #0078d4;
+}
+
+.bottomScrollIndicator {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.scrollDash {
+  width: 28px;
+  height: 4px;
+  background-color: #64748b;
+  border-radius: 9999px;
+}
+
+@media (max-width: 900px) {
+  .cardContainer {
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  .carouselIndicators {
+    display: none;
+  }
+}
