@@ -1,0 +1,86 @@
+.section {
+  background-color: #ffffff;
+  padding: 6rem 2rem;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.postsGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.postCard {
+  display: flex;
+  align-items: stretch;
+  background-color: #ffffff;
+  width: 350px;
+  gap: 1rem;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.postContent {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.postTitle {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #333333;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.readBlogBtn {
+  background: transparent;
+  color: #0078d4;
+  border: 1px solid #0078d4;
+  padding: 0.6rem 2rem;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.readBlogBtn:hover {
+  background: #0078d4;
+  color: #ffffff;
+}

@@ -1,0 +1,107 @@
+.section {
+  background-color: #0c0c0c;
+  padding: 6rem 2rem;
+  width: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.iconWrapper {
+  margin-bottom: 1.5rem;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardHeader {
+  background-color: #0078d4;
+  width: 100%;
+  padding: 0.6rem 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.cardDesc {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: #cccccc;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.learnMoreBtn {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.4rem 1.5rem;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: auto;
+  transition: all 0.2s;
+}
+
+.learnMoreBtn:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}

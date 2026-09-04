@@ -1,0 +1,27 @@
+.section {
+  background-color: #000000;
+  padding: 8rem 2rem 4rem 2rem; /* Extra top padding to account for the overlapping hero box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.text {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #dddddd;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 10rem; /* Give more space if the hero box stacks taller on mobile */
+  }
+}

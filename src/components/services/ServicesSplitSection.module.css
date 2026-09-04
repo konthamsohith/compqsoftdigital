@@ -1,0 +1,87 @@
+.section {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+}
+
+.reverse {
+  direction: rtl;
+}
+.reverse > * {
+  direction: ltr;
+}
+
+.textContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 4rem;
+}
+
+.textWrapper {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  font-family: var(--font-inter), sans-serif;
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.paragraphContainer {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.accentLine {
+  width: 3px;
+  background-color: #111111;
+  flex-shrink: 0;
+}
+
+.paragraph {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444444;
+  font-weight: 400;
+}
+
+.imageContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  
+  .imageWrapper {
+    min-height: 350px;
+  }
+}
