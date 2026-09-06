@@ -1,5 +1,5 @@
 .section {
-  background-color: #0c0c0c;
+  background-color: #000000;
   padding: 6rem 2rem;
   width: 100%;
 }
@@ -37,10 +37,16 @@
 
 .iconWrapper {
   margin-bottom: 1.5rem;
-  height: 48px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.icon {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
 }
 
 .cardHeader {
@@ -75,21 +81,24 @@
 }
 
 .learnMoreBtn {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  padding: 0.4rem 1.5rem;
+  display: inline-block;
+  text-decoration: none;
+  background: #ffffff;
+  color: #0078d4;
+  border: 1.5px solid #0078d4;
+  padding: 0.5rem 2rem;
   font-family: var(--font-inter), sans-serif;
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
   margin-top: auto;
+  border-radius: 2px;
   transition: all 0.2s;
 }
 
 .learnMoreBtn:hover {
-  background: #ffffff;
-  color: #000000;
+  background: #0078d4;
+  color: #ffffff;
 }
 
 @media (max-width: 1024px) {

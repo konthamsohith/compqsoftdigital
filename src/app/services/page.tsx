@@ -23,8 +23,7 @@ export default function ServicesPage() {
             Harness the power of your digital ecosystems. At CompQsoft Digital's end-to-end Microsoft services. From scalable cloud platforms and intelligent automation to data analytics, AI, and CRM—we build solutions that deliver real business results and drive innovation.
           </>
         }
-        imageSrc="/image1.png"
-        imageAlt="Business Impact"
+        videoSrc="/7685817-hd_1920_1080_24fps.mp4"
         imageOnRight={true}
         showAccentLine={true}
       />
@@ -36,11 +35,10 @@ export default function ServicesPage() {
         title="Transformative Services to Accelerate Your Business Growth"
         text={
           <>
-            At CompQsoft Digital, we offer a powerful suite of technology services designed to drive innovation, streamline operations, and position your business for long-term success. From cloud modernization and data intelligence to low-code development and AI-driven automation, our solutions are built to adapt, scale, and deliver measurable results.<br/><br/>Partner with us to unlock the full potential of digital transformation and accelerate your business growth.
+            At CompQsoft Digital, we offer a powerful suite of technology services designed to drive innovation, streamline operations, and position your business for long-term success. From cloud modernization and data intelligence to low-code development and AI-powered automation, our solutions are built to adapt, scale, and deliver measurable results.<br/><br/>Partner with us to unlock the full potential of digital transformation and accelerate your path to growth.
           </>
         }
-        imageSrc="/image2.png"
-        imageAlt="Transformative Services"
+        videoSrc="/a.mp4"
         imageOnRight={true}
         showAccentLine={false}
       />

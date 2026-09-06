@@ -4,8 +4,9 @@ import styles from './ServicesSplitSection.module.css';
 interface ServicesSplitSectionProps {
   title: string;
   text: React.ReactNode;
-  imageSrc: string;
-  imageAlt: string;
+  imageSrc?: string;
+  imageAlt?: string;
+  videoSrc?: string;
   imageOnRight?: boolean;
   showAccentLine?: boolean;
 }
@@ -15,6 +16,7 @@ export default function ServicesSplitSection({
   text, 
   imageSrc, 
   imageAlt, 
+  videoSrc,
   imageOnRight = true,
   showAccentLine = false 
 }: ServicesSplitSectionProps) {
@@ -34,12 +36,23 @@ export default function ServicesSplitSection({
 
         <div className={styles.imageContent}>
           <div className={styles.imageWrapper}>
-            <Image 
-              src={imageSrc} 
-              alt={imageAlt} 
-              fill
-              className={styles.image}
-            />
+            {videoSrc ? (
+              <video
+                src={videoSrc}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className={styles.video}
+              />
+            ) : (
+              <Image 
+                src={imageSrc!} 
+                alt={imageAlt!} 
+                fill
+                className={styles.image}
+              />
+            )}
           </div>
         </div>
 

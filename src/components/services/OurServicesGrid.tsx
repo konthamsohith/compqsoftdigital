@@ -1,37 +1,46 @@
+import Image from 'next/image';
 import styles from './OurServicesGrid.module.css';
 
 const services = [
   {
     title: "Management Consulting",
-    desc: "Leverage our in-depth experience to align your business values, through digital and advanced technologies. Our experts bring data security innovations for Microsoft execution initiatives."
-  },
-  {
-    title: "Cloud & Infrastructure",
-    desc: "Design & modern cloud architecture using seamless and scalable, secure and robust IT environments. We modernize legacy systems and optimize infrastructures through absolutely agile architecture and communication engagement."
-  },
-  {
-    title: "AI and Machine Learning",
-    desc: "AI and Machine Learning accelerates innovation through intelligence. Automate complex processes to gather actionable data insights. From developing chatbots to machine vision algorithms, we empower enterprises to make highly smart informed decisions."
-  },
-  {
-    title: "Data & Analytics",
-    desc: "Unlock the true potential of data with actionable analytics. We transform complex data into clear, concise, actionable insights to empower highly smart and informed decisions."
+    icon: "/Management Consulting Icon 1.png",
+    desc: "Leverage our Microsoft expertise to unlock greater business value through digital and AI-powered technologies. Our experts bring deep industry knowledge and Microsoft ecosystem expertise."
   },
   {
     title: "Power Platform",
-    desc: "Deliver resilient, empowered solutions. With low-code tools, anyone can build apps, automate workflows and securely connect your systems. Drive lasting impact."
+    icon: "/Power Platform.png",
+    desc: "Put innovation in everyone's hands. With low-code tools, anyone can build apps, automate tasks, and connect data across your systems—no coding required."
+  },
+  {
+    title: "Cloud & Infrastructure",
+    icon: "/Cloud Infrastructure 1.png",
+    desc: "Cloud & Infrastructure services empower businesses with scalable, secure, and resilient IT environments. We modernize legacy systems and optimize performance through cloud migration, automation, and infrastructure management."
   },
   {
     title: "Dynamics 365 ERP",
-    desc: "Streamline operations and drive efficiency. Our experts leverage CRM to help business move faster and more smartly to optimize operations."
+    icon: "/Dynamics 365 ERP.png",
+    desc: "Streamline operations and drive efficiency. Get real-time insights to help your business move faster and make smarter decisions."
+  },
+  {
+    title: "AI and Machine Learning",
+    icon: "/AI & Machine Learning 1.png",
+    desc: "AI and Machine Learning services drive innovation through intelligent automation and predictive insights. We build custom models and integrate AI solutions that enhance efficiency, decision-making, and customer experiences."
   },
   {
     title: "Dynamics 365 CRM",
-    desc: "Turn data leads into revenue. Use data-driven CRM to boost engagement, improve services and scale operations faster."
+    icon: "/Dynamics CRM 1.png",
+    desc: "Turn relationships into revenue. Use data-driven CRM to boost engagement, improve service, and grow customer loyalty."
+  },
+  {
+    title: "Data & Analytics",
+    icon: "/Data & Analytics 1.png",
+    desc: "Data & Analytics services turn raw data into actionable insights for smarter decision-making. We help organizations harness the power of data through advanced analytics, visualization, and AI-driven intelligence."
   },
   {
     title: "Change Mgmt. & Training",
-    desc: "Leverage in-depth training and consultation management to ease the working course, helping users."
+    icon: "/Change Management & Training 1.png",
+    desc: "Leverage Microsoft Training across multiple workloads. Houston, TX training center opening soon."
   }
 ];
 
@@ -45,10 +54,13 @@ export default function OurServicesGrid() {
           {services.map((service, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.iconWrapper}>
-                {/* Placeholder icon */}
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.5">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
+                <Image
+                  src={service.icon}
+                  alt={service.title}
+                  width={72}
+                  height={72}
+                  className={styles.icon}
+                />
               </div>
               
               <div className={styles.cardHeader}>
@@ -57,7 +69,7 @@ export default function OurServicesGrid() {
               
               <div className={styles.cardBody}>
                 <p className={styles.cardDesc}>{service.desc}</p>
-                <button className={styles.learnMoreBtn}>Learn More</button>
+                <a href="https://www.compqsoftdigital.com/contact" className={styles.learnMoreBtn}>Learn More</a>
               </div>
             </div>
           ))}
@@ -66,3 +78,5 @@ export default function OurServicesGrid() {
     </section>
   );
 }
+
+
