@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "postinstall": "git lfs pull"
+    "postinstall": "git config remote.origin.url https://github.com/konthamsohith/compqsoftdigital.git && git lfs pull"
   },
   "dependencies": {
     "next": "16.3.4",
