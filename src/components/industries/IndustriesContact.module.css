@@ -1,0 +1,141 @@
+.section {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 5rem 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 2rem;
+  line-height: 1.4;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.socialIcons a {
+  color: #1a1a1a;
+  transition: color 0.2s ease;
+}
+
+.socialIcons a:hover {
+  color: #2b7cff;
+}
+
+.thankYou {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #2b7cff;
+  font-weight: 600;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.fieldsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.messageColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+}
+
+.input {
+  border: 1px solid #1a1a1a;
+  padding: 0.7rem 0.75rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: 2px solid #2b7cff;
+  outline-offset: 1px;
+}
+
+.textarea {
+  border: 1px solid #1a1a1a;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  flex: 1;
+  min-height: 260px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.submitRow {
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sendButton {
+  background-color: #5b9bff;
+  color: #ffffff;
+  border: none;
+  padding: 0.85rem 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sendButton:hover {
+  background-color: #2b7cff;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .submitRow {
+    grid-column: 1;
+    justify-content: center;
+  }
+
+  .textarea {
+    min-height: 180px;
+  }
+}

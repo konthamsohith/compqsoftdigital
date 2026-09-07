@@ -1,0 +1,67 @@
+.section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5rem 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titleWrapper {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.titlePill {
+  background-color: #5b9bff;
+  padding: 0.75rem 2rem;
+  display: inline-block;
+}
+
+.mainTitle {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.itemTitle {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.itemText {
+  color: #e0e0e0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .mainTitle {
+    font-size: 1.25rem;
+  }
+
+  .itemTitle {
+    font-size: 1.25rem;
+  }
+
+  .itemText {
+    font-size: 1rem;
+  }
+}

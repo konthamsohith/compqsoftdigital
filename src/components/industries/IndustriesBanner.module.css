@@ -1,0 +1,38 @@
+.section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2rem 2rem 4rem 2rem;
+  text-align: left;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #2b7cff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .text {
+    font-size: 1rem;
+  }
+}

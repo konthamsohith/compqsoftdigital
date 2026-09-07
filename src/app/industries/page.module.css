@@ -1,0 +1,4 @@
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+}
