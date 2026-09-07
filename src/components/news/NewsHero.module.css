@@ -1,0 +1,75 @@
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(135deg, #0052cc 0%, #a3c2f0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* Add curve at the bottom */
+  border-bottom-left-radius: 50% 100px;
+  border-bottom-right-radius: 50% 100px;
+  margin-bottom: 4rem;
+}
+
+.contentContainer {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.scrollIndicator {
+  position: absolute;
+  left: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.scrollArrow {
+  writing-mode: horizontal-tb;
+  font-size: 1.25rem;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .scrollIndicator {
+    left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 350px;
+    border-bottom-left-radius: 50% 50px;
+    border-bottom-right-radius: 50% 50px;
+  }
+  
+  .scrollIndicator {
+    display: none;
+  }
+  
+  .title {
+    font-size: 3rem;
+  }
+}

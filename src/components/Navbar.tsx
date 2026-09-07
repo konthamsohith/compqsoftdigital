@@ -33,29 +33,29 @@ export default function Navbar() {
         <div className={styles.navItemWithDropdown}>
           <Link href="#">Insights</Link>
           <div className={styles.dropdown}>
-            <Link href="#">Blog</Link>
-            <Link href="#">Case Studies</Link>
-            <Link href="#">Event</Link>
-            <Link href="#">Webinars</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/case-studies">Case Studies</Link>
+            <Link href="/events">Event</Link>
+            <Link href="/webinars">Webinars</Link>
           </div>
         </div>
         <div className={styles.navItemWithDropdown}>
-          <Link href="#">Careers</Link>
+          <Link href="/careers">Careers</Link>
           <div className={styles.dropdown}>
-            <Link href="#">Life at CQS</Link>
-            <Link href="#">Open Positions</Link>
+            <Link href="/careers">Life at CQS</Link>
+            <Link href="/careers#openings">Open Positions</Link>
           </div>
         </div>
         <div className={styles.navItemWithDropdown}>
-          <Link href="#">About</Link>
+          <Link href="/about">About</Link>
           <div className={styles.dropdown}>
-            <Link href="#">News</Link>
+            <Link href="/news">News</Link>
           </div>
         </div>
         <div className={styles.navItemWithDropdown}>
           <Link href="#">More</Link>
           <div className={styles.dropdown}>
-            <Link href="#">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </div>
         </div>
       </div>

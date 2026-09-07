@@ -1,0 +1,55 @@
+.section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.cardContainer {
+  width: 100%;
+  max-width: 1000px;
+  border: 1px solid #e5e7eb; /* Light gray thin border */
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.topHalf {
+  width: 100%;
+}
+
+.bottomHalf {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+}
+
+.formColumn {
+  flex: 1;
+}
+
+.mapColumn {
+  flex: 1;
+}
+
+@media (max-width: 991px) {
+  .cardContainer {
+    padding: 3rem 2rem;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    padding: 2rem 1.5rem;
+    gap: 2.5rem;
+  }
+  
+  .bottomHalf {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}

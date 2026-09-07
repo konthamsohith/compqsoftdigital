@@ -1,0 +1,55 @@
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay over the image */
+  z-index: 2;
+}
+
+.titleBox {
+  position: relative;
+  z-index: 3;
+  background-color: #000000;
+  padding: 1.5rem 4rem;
+  border-radius: 4px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 300px;
+  }
+  
+  .titleBox {
+    padding: 1.5rem 3rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}

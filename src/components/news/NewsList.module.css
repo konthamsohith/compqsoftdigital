@@ -1,0 +1,15 @@
+.section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1000px; /* Narrower container for better readability like the mockup */
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 1.5rem;
+  }
+}
