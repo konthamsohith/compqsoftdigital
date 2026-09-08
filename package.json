@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "git config remote.origin.url https://github.com/konthamsohith/compqsoftdigital.git && git lfs pull && next build",
     "start": "next start",
-    "lint": "eslint",
-    "postinstall": "git config remote.origin.url https://github.com/konthamsohith/compqsoftdigital.git && git lfs pull"
+    "lint": "eslint"
   },
   "dependencies": {
     "next": "16.3.4",
