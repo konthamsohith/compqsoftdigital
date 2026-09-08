@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "git lfs pull && next build",
+    "build": "git remote set-url origin https://github.com/konthamsohith/compqsoftdigital.git || git remote add origin https://github.com/konthamsohith/compqsoftdigital.git; git lfs pull && next build",
     "start": "next start",
     "lint": "eslint"
   },
