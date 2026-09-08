@@ -16,7 +16,7 @@ const teamMembers = [
     name: 'Greg Moser',
     title: 'President, Board Member',
     bio: 'Greg is responsible for driving the strategy and vision for the business, in addition to driving operational efficiencies, culture, growth, and go-to-market strategies for CompQSoft Digital. He brings over 28 years of delivering digital transformative programs and has been involved in the some of the largest Microsoft deployments globally.',
-    imageSrc: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=300',
+    imageSrc: '/CQSD Leadership Team Profiles.png',
     linkedIn: '#'
   },
   {
@@ -24,7 +24,7 @@ const teamMembers = [
     name: 'Sachin Narula',
     title: 'CFO, Board Member',
     bio: 'Sachin has over 20+ years of experience building financial strategies and managing projects, 12 of which were directed towards growing CompQsoft. He oversees financial operations, which include Cost Management and financial statements.',
-    imageSrc: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=300',
+    imageSrc: '/WhatsApp Image 2025-07-01 at 22.32.39_554b4369.jpg',
     linkedIn: '#'
   },
   {
@@ -32,7 +32,7 @@ const teamMembers = [
     name: 'Jon Rastia',
     title: 'CTO, EVP Strategy',
     bio: 'Jon is responsible for driving sales, pre-sales, IP and CompQSoft Digital’s vision for our go-to-markets and strategies. He brings over 25 years of experience in designing and implementing enterprise customer experience, finance, and user experience solutions, with a proven track record of reducing costs, increasing efficiency, and improving ROI. His expertise spans retail, manufacturing, insurance, and financial services.',
-    imageSrc: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300',
+    imageSrc: '/WhatsApp Image 2025-05-07 at 15.34_edited.png',
     linkedIn: '#'
   },
   {
@@ -40,7 +40,7 @@ const teamMembers = [
     name: 'Andrew Jeffers',
     title: 'Chief Customer Officer',
     bio: 'Andrew is responsible for overseeing the delivery of enterprise level digital transformations for customers in a variety of industry verticals. He possesses over 25 years of Microsoft-focused solution experience by building high performing, cross functional teams successfully delivering solutions for hundreds of organizations over the course of his career. Andrew has worked for various organizations including Deloitte, Avanade, IBM/Neudesic, TTEC, and DXC, among others.',
-    imageSrc: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=300',
+    imageSrc: '/greg1.jpg',
     linkedIn: '#'
   },
   {
@@ -48,7 +48,7 @@ const teamMembers = [
     name: 'Thomas Decot',
     title: 'COO, Board Member',
     bio: 'Thomas is a seasoned operations executive with proven expertise in executing and building businesses across the Defense and Intelligence communities, including the Navy, Air Force, Army, DISA, DLA, DFAS, COCOMs, and DIA.',
-    imageSrc: 'https://images.unsplash.com/photo-1514222709107-a180c68d72b4?auto=format&fit=crop&q=80&w=300',
+    imageSrc: '/WhatsApp Image 2025-05-07 at 15.34.18_b76623a3.jpg',
     linkedIn: '#'
   },
   {
@@ -56,7 +56,7 @@ const teamMembers = [
     name: 'Qamer Baber',
     title: 'Chief Information Officer',
     bio: 'Qamer is a seasoned IT professional with over 17+ years of experience servicing both the Commercial and Federal sectors. At CompQsoft, he heads the development, implementation, and maintenance of operational standards and procedures.',
-    imageSrc: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=300',
+    imageSrc: '/qamer.jpg',
     linkedIn: '#'
   }
 ];

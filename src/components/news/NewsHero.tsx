@@ -5,12 +5,14 @@ export default function NewsHero() {
     <section className={styles.heroSection}>
       <div className={styles.contentContainer}>
         <div className={styles.scrollIndicator}>
-          SCROLL DOWN
-          <div className={styles.scrollArrow}>↓</div>
+          <span className={styles.scrollText}>SCROLL DOWN</span>
+          <div className={styles.scrollLineWrapper}>
+            <div className={styles.scrollLine}></div>
+            <div className={styles.scrollArrow}></div>
+          </div>
         </div>
         <h1 className={styles.title}>NEWS</h1>
       </div>
-      <div className={styles.curvedBottom}></div>
     </section>
   );
 }

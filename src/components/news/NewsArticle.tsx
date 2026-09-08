@@ -7,6 +7,8 @@ interface NewsArticleProps {
   subtitle?: string;
   paragraphs: string[];
   imageSrc?: string;
+  personName?: string;
+  personRole?: string;
 }
 
 export default function NewsArticle({
@@ -14,23 +16,33 @@ export default function NewsArticle({
   title,
   subtitle,
   paragraphs,
-  imageSrc
+  imageSrc,
+  personName,
+  personRole
 }: NewsArticleProps) {
   return (
     <article className={styles.article}>
-      
+
       {/* Index Number column */}
       <div className={styles.numberColumn}>
         {imageSrc && (
           <div className={styles.imageWrapper}>
-            <Image 
-              src={imageSrc} 
-              alt={title} 
+            <Image
+              src={imageSrc}
+              alt={title}
               fill
               className={styles.image}
             />
           </div>
         )}
+        
+        {(personName || personRole) && (
+          <div className={styles.personInfo}>
+            {personName && <div className={styles.personName}>{personName}</div>}
+            {personRole && <div className={styles.personRole}>{personRole}</div>}
+          </div>
+        )}
+
         <span className={styles.indexNumber}>{indexNumber}</span>
       </div>
 
@@ -38,7 +50,7 @@ export default function NewsArticle({
       <div className={styles.contentColumn}>
         {title && <h2 className={styles.title}>{title}</h2>}
         {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
-        
+
         <div className={styles.bodyText}>
           {paragraphs.map((para, index) => (
             <p key={index}>{para}</p>

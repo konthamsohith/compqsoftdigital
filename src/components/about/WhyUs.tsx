@@ -9,8 +9,8 @@ export default function WhyUs() {
         <div className={styles.imageSide}>
           <div className={styles.imageWrapper}>
             <Image 
-              src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=1200" 
-              alt="Professional working" 
+              src="https://static.wixstatic.com/media/11062b_b3b44769b7b74bf3a7c3e620b32e71e5~mv2.jpg/v1/fill/w_1512,h_1772,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_b3b44769b7b74bf3a7c3e620b32e71e5~mv2.jpg" 
+              alt="Why Us" 
               fill
               className={styles.image}
             />
@@ -19,18 +19,18 @@ export default function WhyUs() {
 
         <div className={styles.contentSide}>
           <div className={styles.textWrapper}>
-            <h2 className={styles.title}>Why US?</h2>
+            <h2 className={styles.title}>Why Us?</h2>
             
             <p className={styles.paragraph}>
-              <strong>CompQsoft Expertise:</strong> We bring extensive domain knowledge and deep functional proficiency to address complex challenges. Our team has decades of collective experience navigating modern enterprise landscapes and solving complex technology problems for global businesses.
+              <strong>Deep Microsoft Expertise</strong> - As a trusted Microsoft partner with over 25 years of experience, CompQsoft Digital brings deep technical knowledge and industry-experience across the Microsoft ecosystem. From Azure and Dynamics 365 to Power Platform and Copilot, we deliver tailored solutions that help businesses maximize the value of their Microsoft investments.
             </p>
             
             <p className={styles.paragraph}>
-              We empower our clients to build sustainable, future-ready organizations by transforming their strategies into actionable results. Through our end-to-end consulting, we help you overcome immediate hurdles and position your business for long-term growth and success. Our approach is collaborative—we listen closely to your needs, understand your context, and co-create solutions that drive meaningful outcomes.
+              <strong>Customer – Employee – Centric Focus</strong> - Our clients and team members are at the heart of everything we do. We take the time to understand your business goals, challenges, and vision—crafting solutions that align with your needs and deliver lasting impact. Our collaborative approach ensures transparency, agility, and a strong partnership throughout your digital transformation journey.
             </p>
             
             <p className={styles.paragraph}>
-              From implementing advanced Microsoft technologies to providing ongoing support and optimization, CompQsoft is dedicated to being your reliable partner on your digital transformation journey. Let us help you unlock the full potential of your enterprise.
+              <strong>High-Performance Delivered</strong> - We pride ourselves on delivering results that matter. With a global delivery model, certified processes, and a relentless focus on quality, CompQsoft Digital consistently drives operational efficiency, innovation, and business growth for our clients. We don’t just meet expectations—we exceed them.
             </p>
           </div>
         </div>

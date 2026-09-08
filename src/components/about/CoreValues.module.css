@@ -20,16 +20,37 @@
 }
 
 .textWrapper {
+  position: relative;
   width: 100%;
-  border-left: 3px solid #111827;
-  padding-left: 2rem;
+  padding-left: 3rem;
+}
+
+.textWrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d1d5db;
+}
+
+.textWrapper::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: -1px;
+  width: 3px;
+  height: 80px;
+  background-color: #374151; /* Dark gray */
 }
 
 .title {
   color: #111827;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
 }
 
 .valuesList {
@@ -44,20 +65,20 @@
 .valueItem {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.25rem;
 }
 
 .valueTitle {
   color: #111827;
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 1.15rem;
+  font-weight: 600;
   margin: 0;
 }
 
 .valueDescription {
-  color: #4b5563;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  color: #374151;
+  font-size: 1.05rem;
+  line-height: 1.6;
   margin: 0;
 }
 

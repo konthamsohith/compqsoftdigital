@@ -34,6 +34,25 @@
   line-height: 1;
 }
 
+.personInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.personName {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.personRole {
+  font-size: 1rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
 .contentColumn {
   flex: 1;
   padding-top: 1rem;
