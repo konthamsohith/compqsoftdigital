@@ -1,31 +1,37 @@
-import Image from 'next/image';
 import styles from './CoreValues.module.css';
 
 export default function CoreValues() {
   const values = [
-    "Quality with respect",
-    "Honesty and integrity in all our business transactions",
-    "Reliability in all our actions",
-    "Social Responsibility",
-    "Constant Innovation",
-    "Uncompromising on the code of ethics",
-    "Value our people",
-    "Deliver with Excellence",
-    "Continuous Learning and Improvement",
-    "Customer-Centricity"
+    {
+      title: 'Quality with Purpose',
+      description: 'We bring the “Q” in everything we do.',
+    },
+    {
+      title: 'Customers & Employees First.',
+      description: 'We cultivate a culture of care and focus to drive excellence',
+    },
+    {
+      title: 'Lead with Innovation.',
+      description: 'We advance continuously to deliver meaningful value.',
+    },
+    {
+      title: 'Delivery with Excellence.',
+      description: 'We execute with precision to achieve exceptional outcomes',
+    },
   ];
 
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        
+
         <div className={styles.contentSide}>
           <div className={styles.textWrapper}>
             <h2 className={styles.title}>Our Core Values</h2>
             <ul className={styles.valuesList}>
               {values.map((value, index) => (
                 <li key={index} className={styles.valueItem}>
-                  {value}
+                  <h3 className={styles.valueTitle}>{value.title}</h3>
+                  <p className={styles.valueDescription}>{value.description}</p>
                 </li>
               ))}
             </ul>
@@ -34,12 +40,15 @@ export default function CoreValues() {
 
         <div className={styles.imageSide}>
           <div className={styles.imageWrapper}>
-            <Image 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200" 
-              alt="Team collaborating" 
-              fill
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
               className={styles.image}
-            />
+            >
+              <source src="/7989833-hd_1920_1080_25fps.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
 

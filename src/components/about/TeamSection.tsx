@@ -5,57 +5,57 @@ import styles from './TeamSection.module.css';
 const teamMembers = [
   {
     id: 1,
-    name: 'Madhu Sheikh',
-    title: 'CEO, Founder, Partner',
-    bio: 'Madhu is a technologist with 25+ years of experience transforming enterprises with Microsoft technologies. As CEO, he leads CompQsoft\'s strategic vision and operations, fostering a culture of innovation and excellence.',
-    imageSrc: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=300',
+    name: 'Madina Shaik',
+    title: 'CEO, Chairman of Board',
+    bio: 'Madina Shaik is a tech expert, a real estate investor, and the chief innovator behind CompQsoft. He brings expertise from 30 years of consulting on system integration, implementation, requirements analysis, and more.',
+    imageSrc: '/madina.jpg',
     linkedIn: '#'
   },
   {
     id: 2,
-    name: 'Craig Moser',
-    title: 'President & Board Member',
-    bio: 'Craig brings 30+ years of leadership experience scaling Microsoft-focused businesses. His strategic foresight and ability to deliver results align perfectly with our customer-centric innovation goals.',
+    name: 'Greg Moser',
+    title: 'President, Board Member',
+    bio: 'Greg is responsible for driving the strategy and vision for the business, in addition to driving operational efficiencies, culture, growth, and go-to-market strategies for CompQSoft Digital. He brings over 28 years of delivering digital transformative programs and has been involved in the some of the largest Microsoft deployments globally.',
     imageSrc: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=300',
     linkedIn: '#'
   },
   {
     id: 3,
-    name: 'Mandeep Singh',
-    title: 'EVP, Global Delivery',
-    bio: 'Mandeep is an IT Delivery Leader with extensive experience driving successful digital transformation projects. He ensures our global delivery centers operate seamlessly to provide world-class solutions.',
+    name: 'Sachin Narula',
+    title: 'CFO, Board Member',
+    bio: 'Sachin has over 20+ years of experience building financial strategies and managing projects, 12 of which were directed towards growing CompQsoft. He oversees financial operations, which include Cost Management and financial statements.',
     imageSrc: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=300',
     linkedIn: '#'
   },
   {
     id: 4,
-    name: 'Jim Sheehan',
-    title: 'Board of Directors',
-    bio: 'Jim is a highly respected technology executive who played a pivotal role in transforming PowerObjects into a leading Microsoft Dynamics partner. He brings deep expertise to our board.',
+    name: 'Jon Rastia',
+    title: 'CTO, EVP Strategy',
+    bio: 'Jon is responsible for driving sales, pre-sales, IP and CompQSoft Digital’s vision for our go-to-markets and strategies. He brings over 25 years of experience in designing and implementing enterprise customer experience, finance, and user experience solutions, with a proven track record of reducing costs, increasing efficiency, and improving ROI. His expertise spans retail, manufacturing, insurance, and financial services.',
     imageSrc: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300',
     linkedIn: '#'
   },
   {
     id: 5,
-    name: 'James Martin',
-    title: 'SVP, Global Sales',
-    bio: 'James leads our global sales organization, driving revenue growth and market expansion. His customer-first approach helps enterprises maximize their investment in Microsoft technologies.',
+    name: 'Andrew Jeffers',
+    title: 'Chief Customer Officer',
+    bio: 'Andrew is responsible for overseeing the delivery of enterprise level digital transformations for customers in a variety of industry verticals. He possesses over 25 years of Microsoft-focused solution experience by building high performing, cross functional teams successfully delivering solutions for hundreds of organizations over the course of his career. Andrew has worked for various organizations including Deloitte, Avanade, IBM/Neudesic, TTEC, and DXC, among others.',
     imageSrc: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=300',
     linkedIn: '#'
   },
   {
     id: 6,
-    name: 'David Smith',
-    title: 'VP, Cloud Services',
-    bio: 'David oversees our Cloud Modernization practice. With a deep understanding of Azure, he helps organizations migrate, optimize, and secure their workloads in the cloud.',
+    name: 'Thomas Decot',
+    title: 'COO, Board Member',
+    bio: 'Thomas is a seasoned operations executive with proven expertise in executing and building businesses across the Defense and Intelligence communities, including the Navy, Air Force, Army, DISA, DLA, DFAS, COCOMs, and DIA.',
     imageSrc: 'https://images.unsplash.com/photo-1514222709107-a180c68d72b4?auto=format&fit=crop&q=80&w=300',
     linkedIn: '#'
   },
   {
     id: 7,
-    name: 'John Doe',
-    title: 'Director of AI & Automation',
-    bio: 'John leads our AI and Automation initiatives, helping clients leverage Generative AI and Copilot to streamline operations and unlock new business value.',
+    name: 'Qamer Baber',
+    title: 'Chief Information Officer',
+    bio: 'Qamer is a seasoned IT professional with over 17+ years of experience servicing both the Commercial and Federal sectors. At CompQsoft, he heads the development, implementation, and maintenance of operational standards and procedures.',
     imageSrc: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=300',
     linkedIn: '#'
   }

@@ -4,7 +4,7 @@ export default function WhyCompQsoft() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.mainTitle}>Why CompQsoft Digital?</h2>
+        <h2 className={styles.mainTitle}>Why CompQsoft Digital ?</h2>
         
         <div className={styles.contentBlock}>
           <h3 className={styles.blockTitle}>Culture</h3>
