@@ -22,6 +22,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "CompQsoft Digital | AI & Digital Transformation Services",
   description: "Leading AI Microsoft Frontier Transformation Partner",
+  icons: {
+    icon: "/RedQ1.jpg",
+  },
 };
 
 export default function RootLayout({ children }: any) {

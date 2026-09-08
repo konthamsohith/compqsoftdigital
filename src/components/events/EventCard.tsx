@@ -31,7 +31,7 @@ export default function EventCard({
       <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.meta}>
-          {date} | {location}
+          {date}{location && ` | ${location}`}
         </p>
         
         <div className={styles.buttonContainer}>
