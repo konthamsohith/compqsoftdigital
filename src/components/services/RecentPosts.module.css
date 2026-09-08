@@ -36,6 +36,7 @@
   align-items: center;
   background-color: #ffffff;
   width: 300px;
+  max-width: 100%;
   gap: 0;
   text-decoration: none;
   cursor: pointer;
@@ -101,4 +102,48 @@
 .readBlogBtn:hover {
   background: #0078d4;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1.5rem 3rem 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3rem 1.25rem 2.5rem 1.25rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .postsGrid {
+    gap: 1rem;
+  }
+
+  .imageWrapper {
+    width: 90px;
+    height: 82px;
+  }
+
+  .postContent {
+    padding: 0.5rem 0.6rem;
+  }
+
+  .postTitle {
+    font-size: 0.85rem;
+  }
+
+  .readBlogBtn {
+    padding: 0.6rem 1.8rem;
+    font-size: 0.95rem;
+  }
 }

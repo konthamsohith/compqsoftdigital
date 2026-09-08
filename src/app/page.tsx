@@ -12,7 +12,7 @@ import ScrollIndicator from '@/components/ScrollIndicator';
 
 export default function Home() {
   return (
-    <main style={{ paddingTop: '80px' }}>
+    <main>
       <Navbar />
       <ScrollIndicator />
       <Hero />

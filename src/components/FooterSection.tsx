@@ -29,11 +29,12 @@ export default function FooterSection() {
               <p className={styles.email}>Email: info@compqsoftdigital.com</p>
               
               <div className={styles.partnerBadge}>
-                <Image 
-                  src="/WhatsApp Image 2025-05-06 at 23.51.17_28d1b3d9.jpg" 
-                  alt="Microsoft Solutions Partner" 
-                  width={350} 
-                  height={110} 
+                <Image
+                  src="/WhatsApp Image 2025-05-06 at 23.51.17_28d1b3d9.jpg"
+                  alt="Microsoft Solutions Partner"
+                  width={350}
+                  height={110}
+                  className={styles.partnerBadgeImage}
                   style={{ objectFit: 'contain', objectPosition: 'left center' }}
                 />
               </div>

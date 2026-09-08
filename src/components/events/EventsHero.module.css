@@ -37,18 +37,33 @@
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
   .heroSection {
     height: 250px;
   }
-  
+
   .contentContainer {
     padding: 0 1.5rem;
   }
-  
+
   .heroTitle {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    height: 220px;
+  }
+
+  .contentContainer {
+    padding: 0 1rem;
+  }
+
+  .heroTitle {
+    font-size: 1.85rem;
   }
 }

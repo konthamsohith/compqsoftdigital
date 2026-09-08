@@ -67,12 +67,39 @@
   .section {
     padding: 3rem 1.5rem;
   }
-  
+
   .title {
     font-size: 1.75rem;
   }
-  
+
   .diagramWrapper {
     height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .diagramWrapper {
+    height: 180px;
+    margin-bottom: 2rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+
+  .bulletList {
+    font-size: 0.9rem;
   }
 }

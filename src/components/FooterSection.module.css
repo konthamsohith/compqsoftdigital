@@ -75,6 +75,11 @@
   margin-top: -3rem;
 }
 
+.partnerBadgeImage {
+  max-width: 100%;
+  height: auto;
+}
+
 .msIconSmall {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -329,5 +334,30 @@
   
   .carouselIndicators {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+  .infoWrapper {
+    gap: 1.5rem;
+  }
+  .rightSide {
+    margin-top: 2rem;
+  }
+  .newsletterTitle {
+    font-size: 1.2rem;
+  }
+  .inputRow {
+    flex-direction: column;
+    height: auto;
+    gap: 0.5rem;
+  }
+  .emailInput, .subscribeBtn {
+    border-radius: 4px;
+    width: 100%;
+    padding: 0.75rem 1rem;
   }
 }

@@ -42,6 +42,7 @@
   z-index: 2;
   margin-top: 15vh;
   text-align: center;
+  padding: 0 1.5rem;
 }
 
 .title {
@@ -93,7 +94,31 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+  
+  .content {
+    margin-top: 100px;
+  }
+
+  .floatingBoxContainer {
+    position: relative;
+    bottom: auto;
+    transform: none;
+    margin-top: 2.5rem;
+  }
+
   .carouselWrapper {
-    height: 180px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carouselWrapper {
+    width: 92%;
+    height: 200px;
   }
 }

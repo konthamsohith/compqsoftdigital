@@ -100,21 +100,53 @@
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .numberColumn {
     flex: none;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 1.25rem;
   }
-  
+
   .imageWrapper {
     width: 100px;
     height: 100px;
     border-width: 2px;
   }
-  
+
   .indexNumber {
     font-size: 4rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .numberColumn {
+    gap: 1rem;
+  }
+
+  .imageWrapper {
+    width: 72px;
+    height: 72px;
+  }
+
+  .indexNumber {
+    font-size: 2.75rem;
+  }
+
+  .personName {
+    font-size: 1.4rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
   }
 }

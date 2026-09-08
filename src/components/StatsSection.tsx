@@ -60,6 +60,7 @@ export default function StatsSection() {
             src="/4.png" 
             alt="Digital Growth 3D Bar Chart" 
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className={styles.graphicImage}
             priority
           />

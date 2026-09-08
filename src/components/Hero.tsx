@@ -93,6 +93,7 @@ export default function Hero() {
                 src={slide.image} 
                 alt={`Hero Graphic ${index}`} 
                 fill
+                sizes="100vw"
                 className={styles.graphicImage}
                 style={{ 
                   objectPosition: 'right center',

@@ -190,15 +190,71 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 2rem 1.5rem 3.5rem 1.5rem;
+  }
+
   .contentBox {
     flex-direction: column;
   }
-  
+
   .imageSide {
     height: 250px;
   }
-  
+
   .textSide {
     padding: 2rem;
+  }
+
+  .tabButton {
+    padding: 0.65rem 1.25rem;
+  }
+
+  .comingSoonBox {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1.5rem 1rem 2.5rem 1rem;
+  }
+
+  .tabsContainer {
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .tabButton {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .imageSide {
+    height: 200px;
+  }
+
+  .textSide {
+    padding: 1.5rem;
+  }
+
+  .contentTitle {
+    font-size: 1.1rem;
+  }
+
+  .contentDescription {
+    font-size: 0.9rem;
+  }
+
+  .partnersRow {
+    gap: 1.5rem;
+  }
+
+  .comingSoonBox {
+    min-height: 220px;
+  }
+
+  .comingSoonText {
+    font-size: 1.15rem;
   }
 }

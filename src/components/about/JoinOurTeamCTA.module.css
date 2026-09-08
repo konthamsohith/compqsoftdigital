@@ -74,10 +74,28 @@
   .section {
     padding: 4rem 1.5rem;
   }
-  
+
   .contentBox {
     padding: 2.5rem 2rem;
     max-width: 100%;
     top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .contentBox {
+    padding: 2rem 1.5rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
   }
 }

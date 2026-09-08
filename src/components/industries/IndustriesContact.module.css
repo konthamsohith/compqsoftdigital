@@ -139,3 +139,30 @@
     min-height: 180px;
   }
 }
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .socialIcons {
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .form {
+    gap: 1.5rem;
+  }
+
+  .textarea {
+    min-height: 150px;
+  }
+
+  .sendButton {
+    padding: 0.85rem 2rem;
+  }
+}

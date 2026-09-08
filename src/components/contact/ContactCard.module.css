@@ -29,10 +29,12 @@
 
 .formColumn {
   flex: 1;
+  min-width: 0;
 }
 
 .mapColumn {
   flex: 1;
+  min-width: 0;
 }
 
 @media (max-width: 991px) {
@@ -47,9 +49,24 @@
     padding: 2rem 1.5rem;
     gap: 2.5rem;
   }
-  
+
   .bottomHalf {
     flex-direction: column;
     gap: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+  .cardContainer {
+    padding: 1.75rem 1.25rem;
+    gap: 2rem;
+  }
+
+  .bottomHalf {
+    gap: 2rem;
   }
 }

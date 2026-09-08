@@ -128,3 +128,28 @@
 .heartIcon {
   transition: fill 0.2s ease;
 }
+
+@media (max-width: 480px) {
+  .content {
+    padding: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .excerpt {
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .metaRow {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .footerRow {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}

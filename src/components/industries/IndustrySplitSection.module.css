@@ -98,18 +98,45 @@
   .textContent {
     padding: 3rem 1.5rem;
   }
-  
+
   .imageContent {
     min-height: 350px;
     position: relative;
     width: 100%;
   }
-  
+
   .title {
     font-size: 1.3rem;
   }
 
   .subtitle {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .textContent {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .titleWrapper {
+    padding: 0.5rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .paragraph {
+    font-size: 0.95rem;
+  }
+
+  .imageContent {
+    min-height: 260px;
   }
 }

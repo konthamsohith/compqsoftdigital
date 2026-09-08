@@ -24,9 +24,19 @@
   .section {
     padding: 3rem 1.5rem;
   }
-  
+
   .grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .grid {
+    gap: 1.5rem;
   }
 }

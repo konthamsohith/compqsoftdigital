@@ -73,3 +73,21 @@
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .section {
+    min-height: 340px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 0 16px;
+  }
+}

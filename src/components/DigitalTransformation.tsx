@@ -39,6 +39,7 @@ export default function DigitalTransformation() {
               src="/image1.png" 
               alt="Digital Transformation with Crane and Laptop" 
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className={styles.graphicImage}
               priority
             />

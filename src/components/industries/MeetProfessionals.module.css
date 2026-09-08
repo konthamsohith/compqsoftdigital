@@ -65,3 +65,29 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+  .titlePill {
+    padding: 0.6rem 1.25rem;
+  }
+
+  .mainTitle {
+    font-size: 1.1rem;
+  }
+
+  .itemTitle {
+    font-size: 1.1rem;
+  }
+
+  .itemText {
+    font-size: 0.95rem;
+  }
+
+  .itemsContainer {
+    gap: 1.5rem;
+  }
+}

@@ -11,6 +11,7 @@ export default function RealTimeData() {
               src="/image2.png" 
               alt="Real-Time Data Access 3D Pie Chart" 
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className={styles.graphicImage}
               priority
             />

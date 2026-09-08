@@ -7,6 +7,8 @@
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .reverse {
@@ -83,12 +85,44 @@
   object-position: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .container {
     grid-template-columns: 1fr;
   }
-  
+
+  .textContent {
+    padding: 4rem 2.5rem;
+  }
+
   .imageWrapper {
     min-height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .textContent {
+    padding: 3.5rem 2rem;
+  }
+
+  .imageWrapper {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .textContent {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .textWrapper {
+    gap: 1.25rem;
+  }
+
+  .imageWrapper {
+    min-height: 220px;
+  }
+
+  .paragraphContainer {
+    gap: 1rem;
   }
 }

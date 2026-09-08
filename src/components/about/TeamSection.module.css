@@ -52,8 +52,9 @@
 
 .imageWrapper {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: clamp(180px, 60vw, 250px);
+  height: auto;
+  aspect-ratio: 1 / 1;
   margin-bottom: 1.5rem;
   background-color: #ffffff;
   border: 2px solid #ffffff;
@@ -122,11 +123,50 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
   .grid {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
-  
+
   .card {
     max-width: 400px;
+  }
+
+  .linkedinIcon {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .grid {
+    gap: 2rem;
+  }
+
+  .imageWrapper {
+    width: clamp(160px, 55vw, 220px);
   }
 }

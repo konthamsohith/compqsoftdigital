@@ -36,18 +36,33 @@
   color: #ffffff;
   font-size: 3.5rem;
   font-weight: 700;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
   .heroSection {
     height: 200px;
   }
-  
+
   .contentContainer {
     padding: 0 1.5rem;
   }
-  
+
   .heroTitle {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    height: 180px;
+  }
+
+  .contentContainer {
+    padding: 0 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
   }
 }

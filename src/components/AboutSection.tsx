@@ -11,6 +11,7 @@ export default function AboutSection() {
               src="/binary_sphere.png" 
               alt="Binary Sphere" 
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className={styles.graphicImage}
               priority
             />

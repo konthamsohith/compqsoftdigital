@@ -65,12 +65,36 @@
   .container {
     flex-direction: column;
   }
-  
+
   .imageSide {
     min-height: 400px;
   }
-  
+
   .contentSide {
     padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .imageSide {
+    min-height: 280px;
+  }
+
+  .contentSide {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
   }
 }

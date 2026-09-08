@@ -86,12 +86,30 @@
     border-bottom-left-radius: 50% 50px;
     border-bottom-right-radius: 50% 50px;
   }
-  
+
   .scrollIndicator {
     display: none;
   }
-  
+
   .title {
     font-size: 3rem;
+  }
+
+  .contentContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    height: 260px;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .contentContainer {
+    padding: 0 1rem;
   }
 }

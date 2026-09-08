@@ -1,7 +1,7 @@
 .hero {
   background-color: var(--hero-bg);
   color: var(--text-white);
-  height: 394px;
+  height: 480px;
   position: relative;
   overflow: hidden;
 }
@@ -30,7 +30,7 @@
 }
 
 .textContent {
-  max-width: 650px;
+  max-width: 900px;
 }
 
 .textContent h1 {
@@ -146,4 +146,36 @@
   background-color: #3b82f6;
   box-shadow: 0 0 8px #3b82f6;
   transform: scale(1.2);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: auto;
+    padding-bottom: 1.5rem;
+  }
+  .content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 100px;
+  }
+  .textContent h1 {
+    font-size: 32px;
+  }
+  .paragraph {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .controlsLeft, .controlsRight {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .textContent h1 {
+    font-size: 28px;
+  }
 }

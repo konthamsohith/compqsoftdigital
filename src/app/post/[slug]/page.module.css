@@ -9,6 +9,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 60px 20px;
+  overflow-wrap: break-word;
 }
 
 .backLinkWrapper {
@@ -36,6 +37,7 @@
 
 .meta {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -138,7 +140,7 @@
 
 .recommendedGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   gap: 30px;
 }
 
@@ -193,19 +195,77 @@
 }
 
 @media (max-width: 768px) {
+  .article {
+    padding: 40px 20px;
+  }
+
   .title {
     font-size: 32px;
   }
-  
+
   .heroImageWrapper {
     height: 300px;
   }
-  
+
   .content {
     font-size: 16px;
   }
-  
+
   .lead {
     font-size: 18px;
+  }
+
+  .content h2 {
+    font-size: 24px;
+    margin: 32px 0 16px;
+  }
+
+  .content h3 {
+    font-size: 20px;
+  }
+
+  .recommended {
+    padding: 40px 20px;
+  }
+
+  .recommendedGrid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .article {
+    padding: 32px 16px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .heroImageWrapper {
+    height: 200px;
+    margin-bottom: 24px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .lead {
+    font-size: 16px;
+    padding-left: 14px;
+  }
+
+  .recommended {
+    padding: 32px 16px;
+  }
+
+  .recommendedTitle {
+    font-size: 20px;
+  }
+
+  .recommendedGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }

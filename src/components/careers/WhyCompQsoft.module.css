@@ -55,4 +55,34 @@
   .section {
     padding: 3rem 1.5rem;
   }
+
+  .mainTitle {
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .blockTitle {
+    font-size: 1.15rem;
+  }
+
+  .blockText,
+  .benefitsList {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .mainTitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .blockText,
+  .benefitsList {
+    font-size: 0.95rem;
+  }
 }

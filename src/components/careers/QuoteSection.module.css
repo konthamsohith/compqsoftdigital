@@ -28,8 +28,19 @@
   .section {
     padding: 3rem 1.5rem;
   }
-  
+
   .quote {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .quote {
+    font-size: 0.95rem;
+    line-height: 1.8;
   }
 }
