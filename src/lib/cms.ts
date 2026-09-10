@@ -24,7 +24,10 @@ export function getCMSData() {
 
 export function getBlogs() {
   const data = getCMSData();
-  return data.blogs || [];
+  const blogs = data.blogs || [];
+  // Draft blogs (published === false) are hidden from the public site but
+  // still visible/editable in the admin panel, which reads the raw API data.
+  return blogs.filter((b: { published?: boolean }) => b.published !== false);
 }
 
 export function getNews() {

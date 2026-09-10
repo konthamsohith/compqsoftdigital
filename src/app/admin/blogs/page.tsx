@@ -137,6 +137,18 @@ export default function BlogsAdmin() {
             />
           </div>
 
+          <div className={styles.formGroup}>
+            <label className={styles.formLabel}>Status</label>
+            <select
+              className={styles.formInput}
+              value={currentBlog?.published === false ? "draft" : "published"}
+              onChange={(e) => setCurrentBlog({ ...currentBlog, published: e.target.value !== "draft" })}
+            >
+              <option value="published">Published (live on the site)</option>
+              <option value="draft">Draft (hidden from the site)</option>
+            </select>
+          </div>
+
           <div style={{ display: "flex", gap: "12px", marginTop: "24px" }}>
             <button type="submit" className={styles.btnPrimary}>Save Blog</button>
             {!currentBlog?.isNew && (
@@ -161,7 +173,7 @@ export default function BlogsAdmin() {
         <button
           className={styles.btnPrimary}
           onClick={() => {
-            setCurrentBlog({ isNew: true, title: "", category: "", excerpt: "", date: "", readTime: "", imageSrc: "" });
+            setCurrentBlog({ isNew: true, title: "", category: "", excerpt: "", date: "", readTime: "", imageSrc: "", published: true });
             setIsEditing(true);
           }}
         >
@@ -169,57 +181,89 @@ export default function BlogsAdmin() {
         </button>
       </div>
 
-      <div className={styles.tableContainer}>
-        <table className={styles.table}>
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Category</th>
-              <th>Date</th>
-              <th>Read Time</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {blogs.length === 0 ? (
-              <tr>
-                <td colSpan={5} style={{ textAlign: "center", padding: "30px" }}>No blogs found</td>
-              </tr>
-            ) : (
-              blogs.map((blog: any, index: number) => (
-                <tr key={blog.href || index}>
-                  <td>
-                    <strong>{blog.title}</strong>
-                    <div style={{ fontSize: "0.875rem", color: "#737373", marginTop: "4px" }}>{blog.excerpt?.substring(0, 50)}...</div>
-                  </td>
-                  <td>{blog.category}</td>
-                  <td>{blog.date}</td>
-                  <td>{blog.readTime}</td>
-                  <td>
-                    <div className={styles.actionBtns}>
-                      <button
-                        className={styles.btnSecondary}
-                        style={{ padding: "6px 12px", fontSize: "0.875rem" }}
-                        onClick={() => {
-                          setCurrentBlog(blog);
-                          setIsEditing(true);
-                        }}
-                      >
-                        Edit
-                      </button>
-                      <button
-                        className={styles.btnDanger}
-                        onClick={() => handleDelete(blog.href)}
-                      >
-                        Delete
-                      </button>
+      <div className={styles.cardListContainer}>
+        <div className={styles.cardListHeader}>
+          <div className={styles.colMain}>Post</div>
+          <div className={styles.colValue}>Read Time</div>
+          <div className={styles.colDate}>Date</div>
+          <div className={styles.colAuthor}>Author</div>
+          <div className={styles.colStatus}>Status</div>
+          <div className={styles.colActions}></div>
+        </div>
+
+        <div className={styles.cardListBody}>
+          {blogs.length === 0 ? (
+            <div style={{ textAlign: "center", padding: "30px", color: "#64748b" }}>No blogs found</div>
+          ) : (
+            blogs.map((blog: any, index: number) => {
+              const isDraft = blog.published === false;
+              return (
+                <div key={blog.href || index} className={styles.listItemCard}>
+                  <div className={styles.colMain}>
+                    {blog.imageSrc ? (
+                      <img src={blog.imageSrc} alt="" className={styles.itemThumb} />
+                    ) : (
+                      <div className={styles.itemThumbPlaceholder} />
+                    )}
+                    <div className={styles.itemMainText}>
+                      <div className={styles.itemTitle}>{blog.title}</div>
+                      <div className={styles.itemSubtitle}>{blog.excerpt?.substring(0, 40)}...</div>
                     </div>
-                  </td>
-                </tr>
-              ))
-            )}
-          </tbody>
-        </table>
+                  </div>
+
+                  <div className={styles.colValue}>
+                    <span className={styles.itemValue}>{blog.readTime || '—'}</span>
+                    <span className={styles.itemSubtitle}>{blog.category || '—'}</span>
+                  </div>
+
+                  <div className={styles.colDate}>
+                    <span className={styles.itemDate}>{blog.date || '—'}</span>
+                  </div>
+
+                  <div className={styles.colAuthor}>
+                    <div className={styles.authorWrapper}>
+                      <div className={styles.authorAvatar}>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" strokeWidth="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                      </div>
+                      <span className={styles.authorName}>Admin</span>
+                    </div>
+                  </div>
+
+                  <div className={styles.colStatus}>
+                    <span className={`${styles.itemStatus} ${isDraft ? styles.itemStatusPending : ''}`}>
+                      {isDraft ? 'Draft' : 'Published'}
+                    </span>
+                  </div>
+
+                  <div className={styles.colActions}>
+                    <div className={styles.actionDropdown}>
+                      <button className={styles.dotsButton}>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                      </button>
+                      <div className={styles.dropdownMenu}>
+                        <button 
+                          className={styles.dropdownItem}
+                          onClick={() => {
+                            setCurrentBlog(blog);
+                            setIsEditing(true);
+                          }}
+                        >
+                          Edit
+                        </button>
+                        <button 
+                          className={`${styles.dropdownItem} ${styles.dangerItem}`}
+                          onClick={() => handleDelete(blog.href)}
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })
+          )}
+        </div>
       </div>
     </div>
   );

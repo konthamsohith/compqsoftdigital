@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Inter, Poppins, Montserrat } from "next/font/google";
 import "./globals.css";
+import PostHogProvider from "./providers";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -31,7 +32,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: any) {
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable} ${montserrat.variable}`}>
-      <body>{children}</body>
+      <body>
+        <PostHogProvider>{children}</PostHogProvider>
+      </body>
     </html>
   );
 }

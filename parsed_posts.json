@@ -6,7 +6,8 @@
       "href": "/post/agentic-customer-experience",
       "date": "Jul",
       "readTime": "303 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "The Agentic AI Inflection Point: How CIOs Are Turning Pilots into Enterprise-Wide Impact",
@@ -14,7 +15,8 @@
       "href": "/post/the-agentic-ai-inflection-point-how-cios-are-turning-pilots-into-enterprise-wide-impact",
       "date": "May",
       "readTime": "254 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "The Agentic AI Gap: Why Most Organizations Are Not Ready and What Tech Leaders Must Do Now",
@@ -22,7 +24,8 @@
       "href": "/post/the-agentic-ai-gap-why-most-organizations-are-not-ready-and-what-tech-leaders-must-do-now",
       "date": "Apr",
       "readTime": "135 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1520333789090-1afc82db536a?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1520333789090-1afc82db536a?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "How Agentic AI Is Transforming Customer Service",
@@ -30,7 +33,8 @@
       "href": "/post/how-agentic-ai-is-transforming-customer-service",
       "date": "Feb",
       "readTime": "152 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "From Dashboards to Decisions: Why Agentic AI Is the Next Evolution of Operational Intelligence in Oil & Gas and Energy",
@@ -38,7 +42,8 @@
       "href": "/post/dashboards-to-decisions-why-agentic-ai-is-the-next-evolution-of-operational-intelligence",
       "date": "Feb",
       "readTime": "43 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1540304453527-62f979142a17?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1540304453527-62f979142a17?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Agentic AI in the Field: Enabling Self-Healing Assets and Predictive Maintenance at Scale",
@@ -46,7 +51,8 @@
       "href": "/post/agentic-ai-in-the-field",
       "date": "Jan",
       "readTime": "283 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1552664688-cf412ec27db2?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1552664688-cf412ec27db2?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Transform Your Customer Experiences with the Agentic AI-powered Dynamics 365 Contact Center",
@@ -54,7 +60,8 @@
       "href": "/post/dynamics365-contact-center",
       "date": "Jan",
       "readTime": "213 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "From Reactive to Autonomous: How Agentic AI Is Redefining Field Operations in Oil & Gas and Energy",
@@ -62,7 +69,8 @@
       "href": "/post/from-reactive-to-autonomous-how-agentic-ai-is-redefining-field-operations-in-oil-gas-and-energy",
       "date": "Jan",
       "readTime": "153 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "How Agentic AI is Transforming Oil & Gas and Energy Field Operations",
@@ -70,7 +78,8 @@
       "href": "/post/how-agentic-ai-transforms-oil-gas-and-energy-field-operations",
       "date": "Jan",
       "readTime": "93 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "How aligned is your AI strategy across the organization and business units?",
@@ -78,7 +87,8 @@
       "href": "/post/how-aligned-is-your-ai-strategy-across-the-organization-and-business-units",
       "date": "Dec 13,",
       "readTime": "20252 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "What Are the Top 5 Reasons AI Projects Fail to Meet Business Objectives?",
@@ -86,7 +96,8 @@
       "href": "/post/what-are-the-top-5-reasons-ai-projects-fail-to-meet-business-objectives",
       "date": "Dec 13,",
       "readTime": "20252 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Driving AI Balance in Your Microsoft Frontier Journey: A Teaser for What’s Ahead",
@@ -94,7 +105,8 @@
       "href": "/post/driving-ai-balance-in-your-microsoft-frontier-journey-a-teaser-for-what-s-ahead",
       "date": "Dec 7,",
       "readTime": "20253 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Untangling Legacy Data: How to Migrate Seamlessly into Microsoft Fabric",
@@ -102,7 +114,8 @@
       "href": "/post/migration-to-microsoft-fabric",
       "date": "Nov 24,",
       "readTime": "20253 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "The AI-Ready Contact Center: A Maturity Model for 2025 and Beyond",
@@ -110,7 +123,8 @@
       "href": "/post/the-ai-ready-contact-center",
       "date": "Nov 10,",
       "readTime": "20252 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Autonomous vs. Generative AI: What’s the Real Fit for Customer Experience?",
@@ -118,7 +132,8 @@
       "href": "/post/autonomous-vs-generative-ai-what-s-the-real-fit-for-customer-experience",
       "date": "Nov 4,",
       "readTime": "20253 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Pilot to Production: A Practical Guide to Accelerating Microsoft Fabric Adoption",
@@ -126,7 +141,8 @@
       "href": "/post/pilot-to-production-microsoft-fabric",
       "date": "Oct 24,",
       "readTime": "20252 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "AI Foundations That Deliver Real Business Value: A CTO’s Perspective",
@@ -134,7 +150,8 @@
       "href": "/post/ai-foundations-that-deliver-real-business-value-a-cto-s-perspective",
       "date": "Oct 20,",
       "readTime": "20252 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1568952433726-3896e3881c65?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1568952433726-3896e3881c65?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Why Unified Data Platforms Are the Missing Link in Your AI Strategy",
@@ -142,7 +159,8 @@
       "href": "/post/why-unified-data-platforms-are-the-missing-link-in-your-ai-strategy",
       "date": "Oct 16,",
       "readTime": "20252 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Beyond Basic Dispatching for Service Orders and Projects: What Are the Options?",
@@ -150,7 +168,8 @@
       "href": "/post/beyond-basic-dispatching-for-service-orders-and-projects-what-are-the-options",
       "date": "Oct 14,",
       "readTime": "20253 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Building an AI-First Customer Experience Strategy with Microsoft Cloud",
@@ -158,7 +177,8 @@
       "href": "/post/ai-first-customer-experience",
       "date": "Sep 10,",
       "readTime": "20253 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Why Data Integration Is the Real Copilot Superpower (and How to Fix Yours)",
@@ -166,7 +186,8 @@
       "href": "/post/why-data-integration-is-the-real-copilot-superpower-and-how-to-fix-yours",
       "date": "Aug 31,",
       "readTime": "20253 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "From Data Chaos to Clarity: How to Align Data Strategy with Business Outcomes",
@@ -174,7 +195,8 @@
       "href": "/post/from-data-chaos-to-clarity-how-to-align-data-strategy-with-business-outcomes",
       "date": "Aug 20,",
       "readTime": "20253 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Omnichannel Customer Service with Dynamics 365: Building a Unified Customer Experience",
@@ -182,7 +204,8 @@
       "href": "/post/omnichannel-customer-service-with-dynamics-365-building-a-unified-customer-experience",
       "date": "May 30,",
       "readTime": "20257 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Generative AI and Microsoft Copilot: Transforming Customer Service in 2025",
@@ -190,7 +213,8 @@
       "href": "/post/generative-ai-and-microsoft-copilot-transforming-customer-service-in-2025",
       "date": "May 29,",
       "readTime": "20257 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Modernizing Legacy Applications for the Digital Age",
@@ -198,7 +222,8 @@
       "href": "/post/modernizing-legacy-applications-for-the-digital-age",
       "date": "Apr 22,",
       "readTime": "20252 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Dynamics 365 Business Central Implementation: A Step-by-Step Guide",
@@ -206,7 +231,8 @@
       "href": "/post/dynamics-365-business-central-implementation-a-step-by-step-guide",
       "date": "Apr 22,",
       "readTime": "20254 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "InfoPath to Power Apps Migration: A Complete Guide",
@@ -214,7 +240,8 @@
       "href": "/post/infopath-to-power-apps-migration-a-complete-guide",
       "date": "Apr 22,",
       "readTime": "20253 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Mastering Microsoft 365 Copilot: A Beginner’s Guide",
@@ -222,7 +249,8 @@
       "href": "/post/mastering-microsoft-365-copilot-a-beginner-s-guide",
       "date": "Apr 22,",
       "readTime": "20252 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1590650046871-92c887180603?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1590650046871-92c887180603?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Solomon to Dynamics 365 Business Central Migration: Embracing the Future",
@@ -230,7 +258,8 @@
       "href": "/post/solomon-to-dynamics-365-business-central-migration-embracing-the-future",
       "date": "Apr 22,",
       "readTime": "20254 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1592921870789-04563d55041c?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1592921870789-04563d55041c?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Latest Dynamics 365 Business Central Update",
@@ -238,7 +267,8 @@
       "href": "/post/latest-dynamics-365-business-central-update",
       "date": "Apr 22,",
       "readTime": "20252 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Tableau to Power BI Migration: A Comprehensive Guide for IT Decision Makers",
@@ -246,7 +276,8 @@
       "href": "/post/tableau-to-power-bi-migration-a-comprehensive-guide-for-it-decision-makers",
       "date": "Apr 22,",
       "readTime": "20253 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Box to SharePoint Migration: A Comprehensive Guide",
@@ -254,7 +285,8 @@
       "href": "/post/box-to-sharepoint-migration-a-comprehensive-guide",
       "date": "Apr 22,",
       "readTime": "20252 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "How to Maximize Dynamics 365 Potential with Microsoft Fabric",
@@ -262,7 +294,8 @@
       "href": "/post/how-to-maximize-dynamics-365-potential-with-microsoft-fabric",
       "date": "Apr 22,",
       "readTime": "20253 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Migrate Dynamics GP to Dynamics 365 Business Central – A Path to Future-Proof Your Business",
@@ -270,7 +303,8 @@
       "href": "/post/migrate-dynamics-gp-to-dynamics-365-business-central-a-path-to-future-proof-your-business",
       "date": "Apr 22,",
       "readTime": "20254 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Dynamics GP to Dynamics 365 Finance and Operations Migration: The Complete Guide",
@@ -278,7 +312,8 @@
       "href": "/post/dynamics-gp-to-dynamics-365-finance-and-operations-migration-the-complete-guide",
       "date": "Apr 22,",
       "readTime": "20255 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "How to Prepare for the End of Support for Dynamics GP?",
@@ -286,7 +321,8 @@
       "href": "/post/how-to-prepare-for-the-end-of-support-for-dynamics-gp",
       "date": "Apr 22,",
       "readTime": "20253 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "QuickBooks to Microsoft Dynamics 365 Business Central Migration: A Path to Business Growth",
@@ -294,7 +330,8 @@
       "href": "/post/quickbooks-to-microsoft-dynamics-365-business-central-migration-a-path-to-business-growth",
       "date": "Apr 22,",
       "readTime": "20254 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Microsoft Dynamics 365 vs. Salesforce: Which CRM is Right for Your Business?",
@@ -302,7 +339,8 @@
       "href": "/post/microsoft-dynamics-365-vs-salesforce-which-crm-is-right-for-your-business",
       "date": "Apr 22,",
       "readTime": "20254 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800",
+      "published": true
     },
     {
       "title": "Unlocking Greater Insights with Analysis Mode in Business Central",
@@ -310,7 +348,8 @@
       "href": "/post/unlocking-greater-insights-with-analysis-mode-in-business-central",
       "date": "Apr 22,",
       "readTime": "20253 min read",
-      "imageSrc": "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?auto=format&fit=crop&q=80&w=800"
+      "imageSrc": "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?auto=format&fit=crop&q=80&w=800",
+      "published": true
     }
   ],
   "news": [

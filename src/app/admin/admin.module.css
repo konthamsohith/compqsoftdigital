@@ -12,6 +12,12 @@
   border-right: 1px solid #e2e8f0;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
+  transition: width 0.2s ease;
+}
+
+.sidebarCollapsed {
+  width: 76px;
 }
 
 .sidebarHeader {
@@ -24,7 +30,34 @@
   letter-spacing: -0.01em;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
+}
+
+.sidebarCollapsed .sidebarHeader {
+  padding: 0;
+  justify-content: center;
+}
+
+.collapseToggle {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.collapseToggle:hover {
+  background-color: #ffffff;
+  color: #0f172a;
+  border-color: #cbd5e1;
 }
 
 .sidebarNav {
@@ -44,10 +77,28 @@
   margin: 0 16px;
   border-radius: 6px;
   font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebarCollapsed .navLink {
+  margin: 0 12px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.navIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .navLink:hover {
-  background-color: #f8fafc;
+  background-color: #ffffff;
   color: #0f172a;
 }
 
@@ -80,6 +131,7 @@
   padding: 32px;
   flex-grow: 1;
   overflow-y: auto;
+  background-color: #ffffff;
 }
 
 .pageHeader {
@@ -182,7 +234,7 @@
 }
 
 .table th {
-  background-color: #f8fafc;
+  background-color: #ffffff;
   font-weight: 600;
   color: #475569;
   text-transform: uppercase;
@@ -195,7 +247,7 @@
 }
 
 .table tr:hover td {
-  background-color: #f1f5f9;
+  background-color: #ffffff;
 }
 
 /* Buttons */
@@ -231,7 +283,7 @@
 }
 
 .btnSecondary:hover {
-  background-color: #f8fafc;
+  background-color: #ffffff;
   border-color: #94a3b8;
 }
 
@@ -291,4 +343,252 @@
 .formTextarea {
   min-height: 200px;
   resize: vertical;
+}
+
+/* Card List UI (New) */
+.cardListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  margin-top: 24px;
+}
+
+.cardListHeader {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr 1.5fr 1.5fr 120px 48px;
+  align-items: center;
+  padding: 0 24px 8px 24px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+
+.cardListBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.listItemCard {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr 1.5fr 1.5fr 120px 48px;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.listItemCard:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.colMain {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  padding-right: 16px;
+}
+
+.colValue, .colDate, .colAuthor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding-right: 16px;
+}
+
+.colStatus {
+  display: flex;
+  align-items: center;
+}
+
+.colActions {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.itemThumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background-color: #ffffff;
+}
+
+.itemThumbPlaceholder {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  background-color: #e2e8f0;
+  flex-shrink: 0;
+}
+
+.itemMainText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.itemTitle {
+  font-weight: 700;
+  color: #111827;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+}
+
+.itemSubtitle {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemValue {
+  font-weight: 700;
+  color: #111827;
+  font-size: 0.9rem;
+}
+
+.itemDate {
+  font-size: 0.9rem;
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.itemTime {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.authorWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.authorAvatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.authorName {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+.itemStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background-color: #f3e8ff;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b21a8;
+  white-space: nowrap;
+}
+
+.itemStatusPending {
+  background-color: #fef9c3;
+  color: #a16207;
+}
+
+.actionDropdown {
+  position: relative;
+}
+
+.dotsButton {
+  background: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  color: #64748b;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  transition: all 0.2s;
+}
+
+.dotsButton:hover {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.dropdownMenu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 4px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 4px;
+  min-width: 120px;
+  z-index: 10;
+  display: none;
+}
+
+.actionDropdown:focus-within .dropdownMenu,
+.actionDropdown:hover .dropdownMenu {
+  display: block;
+}
+
+.dropdownItem {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #475569;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.1s;
+}
+
+.dropdownItem:hover {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.dangerItem {
+  color: #ef4444;
+}
+
+.dangerItem:hover {
+  background-color: #fef2f2;
+  color: #dc2626;
 }

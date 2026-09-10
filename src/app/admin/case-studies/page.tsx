@@ -212,7 +212,7 @@ export default function CaseStudiesAdmin() {
             <label className={styles.formLabel}>Sections (Customer, Business Challenge, Solutions, Results, etc.)</label>
 
             {(currentCaseStudy?.sections || []).map((section: any, sIndex: number) => (
-              <div key={sIndex} style={{ border: "1px solid #e2e8f0", borderRadius: "8px", padding: "16px", marginBottom: "16px", backgroundColor: "#f8fafc" }}>
+              <div key={sIndex} style={{ border: "1px solid #e2e8f0", borderRadius: "8px", padding: "16px", marginBottom: "16px", backgroundColor: "#ffffff" }}>
                 <div style={{ display: "flex", gap: "10px", marginBottom: "10px", alignItems: "flex-end" }}>
                   <div style={{ flex: 1 }}>
                     <label className={styles.formLabel} style={{ marginBottom: "6px" }}>Section Heading</label>
