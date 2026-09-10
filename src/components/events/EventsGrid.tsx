@@ -1,50 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import EventCard from './EventCard';
 import styles from './EventsGrid.module.css';
 
-const mockEvents = [
-  {
-    id: 1,
-    imageSrc: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=800',
-    title: 'Driving Your Agentic AI Field Services to Empower Your Oil & Gas / Energy Assets',
-    date: 'Feb 11, 2026',
-    location: '',
-    href: '/events/agentic-ai-field-services'
-  },
-  {
-    id: 2,
-    imageSrc: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800',
-    title: 'Transforming Insurance with Power Platform, AI Agents, and Microsoft Copilot',
-    date: 'Sep 23-24, 2025',
-    location: 'New York, NY, USA',
-    href: '/events/transforming-insurance'
-  },
-  {
-    id: 3,
-    imageSrc: 'https://images.unsplash.com/photo-1475721025505-c315a6ab3600?auto=format&fit=crop&q=80&w=800',
-    title: 'Power Platform Community Conference',
-    date: 'Oct 28-30, 2025',
-    location: 'Las Vegas, NV, USA',
-    href: '/events/power-platform-conference'
-  },
-  {
-    id: 4,
-    imageSrc: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800',
-    title: 'Fuel Innovation with Copilot, Power Platform, and AI Agents',
-    date: 'Nov 18, 2025',
-    location: 'Arlington, VA, USA',
-    href: '/events/fuel-innovation-copilot'
-  }
-];
+import { getEvents } from '@/lib/cms';
 
-export default function EventsGrid() {
+export default async function EventsGrid() {
+  const eventsList = getEvents();
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.grid}>
-          {mockEvents.map((event) => (
+          {eventsList.map((event: any, index: number) => (
             <EventCard 
-              key={event.id}
-              imageSrc={event.imageSrc}
+              key={event.id || index}
+              imageSrc={event.imageSrc || 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=800'}
               title={event.title}
               date={event.date}
               location={event.location}

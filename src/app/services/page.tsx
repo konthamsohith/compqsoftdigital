@@ -20,7 +20,7 @@ export default function ServicesPage() {
         title="Unlock Business Impact with Microsoft Technology Solutions"
         text={
           <>
-            Harness the power of your digital ecosystems. At CompQsoft Digital's end-to-end Microsoft services. From scalable cloud platforms and intelligent automation to data analytics, AI, and CRM—we build solutions that deliver real business results and drive innovation.
+            Harness the power of your digital ecosystems. At CompQsoft Digital&apos;s end-to-end Microsoft services. From scalable cloud platforms and intelligent automation to data analytics, AI, and CRM—we build solutions that deliver real business results and drive innovation.
           </>
         }
         videoSrc="/7685817-hd_1920_1080_24fps.mp4"

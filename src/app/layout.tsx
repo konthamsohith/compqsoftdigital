@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Metadata } from "next";
 import { Inter, Poppins, Montserrat } from "next/font/google";
 import "./globals.css";

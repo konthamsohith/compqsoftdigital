@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { mockPosts } from '@/components/blog/BlogGrid';
+import { getBlogs } from '@/lib/cms';
 import blogContentData from '@/data/blogContent.json';
 import styles from './page.module.css';
 
@@ -14,7 +15,8 @@ interface BlogPostProps {
 
 export default async function BlogPostPage({ params }: BlogPostProps) {
   const { slug } = await params;
-  const post = mockPosts.find((p) => p.href === `/post/${slug}`);
+  const posts = getBlogs();
+  const post = posts.find((p: any) => p.href === `/post/${slug}`);
   const contentParagraphs = (blogContentData as Record<string, string[]>)[slug] || [];
 
   if (!post) {
@@ -46,7 +48,7 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
         {/* Post Hero Image */}
         <div className={styles.heroImageWrapper}>
           <Image
-            src={post.imageSrc}
+            src={post.imageSrc || "https://images.unsplash.com/photo-1542435503-956c26b96af5?auto=format&fit=crop&q=80&w=1200"}
             alt={post.title}
             fill
             className={styles.heroImage}
@@ -75,14 +77,14 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
       <section className={styles.recommended}>
         <h2 className={styles.recommendedTitle}>More from Insights</h2>
         <div className={styles.recommendedGrid}>
-          {mockPosts
-            .filter((p) => p.id !== post.id)
+          {posts
+            .filter((p: any) => p.id !== post.id)
             .slice(0, 3)
-            .map((recPost) => (
+            .map((recPost: any) => (
               <Link href={recPost.href} key={recPost.id} className={styles.recCard}>
                 <div className={styles.recImageWrapper}>
                   <Image
-                    src={recPost.imageSrc}
+                    src={recPost.imageSrc || "https://images.unsplash.com/photo-1542435503-956c26b96af5?auto=format&fit=crop&q=80&w=800"}
                     alt={recPost.title}
                     fill
                     className={styles.recImage}

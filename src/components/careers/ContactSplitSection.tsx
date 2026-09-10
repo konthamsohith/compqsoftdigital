@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 import Link from 'next/link';
 import styles from './ContactSplitSection.module.css';
 
@@ -10,8 +10,8 @@ export default function ContactSplitSection() {
         <div className={styles.contentSide}>
           <div className={styles.floatingBox}>
             <h2 className={styles.boxTitle}>
-              Didn't find the role<br />
-              you're looking for? Get<br />
+              Didn&apos;t find the role<br />
+              you&apos;re looking for? Get<br />
               in touch with us!
             </h2>
             <Link href="mailto:info@compqsoftdigital.com" className={styles.submitButton}>

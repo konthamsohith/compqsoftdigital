@@ -1,17 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import CaseStudyCard from './CaseStudyCard';
-import { caseStudies } from './caseStudiesData';
+import { getCaseStudies } from '@/lib/cms';
 import styles from './CaseStudiesGrid.module.css';
 
-export default function CaseStudiesGrid() {
+export default async function CaseStudiesGrid() {
+  const caseStudiesList = getCaseStudies();
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.grid}>
-          {caseStudies.map((study) => (
+          {caseStudiesList.map((study: any, index: number) => (
             <CaseStudyCard
-              key={study.id}
-              imageSrc={study.imageSrc}
-              date={study.date}
+              key={study.id || index}
+              imageSrc={study.imageSrc || 'https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=800'}
+              date={study.date || ''}
               readTime={study.readTime}
               category={study.category}
               title={study.title}

@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
 import CaseStudyDetail from '@/components/case-studies/CaseStudyDetail';
-import { caseStudies } from '@/components/case-studies/caseStudiesData';
+import { getCaseStudies } from '@/lib/cms';
 import { notFound } from 'next/navigation';
 
 interface CaseStudyPageProps {
@@ -10,7 +11,8 @@ interface CaseStudyPageProps {
 
 export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
   const { slug } = await params;
-  const study = caseStudies.find((s) => s.slug === slug);
+  const caseStudiesList = getCaseStudies();
+  const study = caseStudiesList.find((s: any) => s.slug === slug);
 
   if (!study) {
     notFound();

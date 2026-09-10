@@ -10,6 +10,7 @@ export default function ScrollIndicator() {
   useEffect(() => {
     // Find all section elements on the page after mount
     const sectionElements = Array.from(document.querySelectorAll("section"));
+    // eslint-disable-next-line
     setSections(sectionElements);
 
     const handleScroll = () => {

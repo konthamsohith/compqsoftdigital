@@ -9,7 +9,7 @@ export default function WhyCompQsoft() {
         <div className={styles.contentBlock}>
           <h3 className={styles.blockTitle}>Culture</h3>
           <p className={styles.blockText}>
-            CompQsoft's culture is rooted in collaboration, innovation, and continuous learning. We foster an environment where every team member is given the autonomy and resources to thrive. We are highly collaborative across various departments. We operate transparently and have regular townhalls and yearly planning offsites.
+            CompQsoft&apos;s culture is rooted in collaboration, innovation, and continuous learning. We foster an environment where every team member is given the autonomy and resources to thrive. We are highly collaborative across various departments. We operate transparently and have regular townhalls and yearly planning offsites.
           </p>
         </div>
 

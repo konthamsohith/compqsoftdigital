@@ -7,7 +7,6 @@ import WhyCompQsoft from '@/components/careers/WhyCompQsoft';
 import CareersCTA from '@/components/careers/CareersCTA';
 import QuoteSection from '@/components/careers/QuoteSection';
 import ContactSplitSection from '@/components/careers/ContactSplitSection';
-import styles from './page.module.css';
 
 export default function CareersPage() {
   return (
@@ -18,7 +17,7 @@ export default function CareersPage() {
       <CareersHero />
       
       <CareersSplitSection 
-        title={<>We're based in Houston's<br />Digital innovation hub</>}
+        title={<>We&apos;re based in Houston&apos;s<br />Digital innovation hub</>}
         paragraphs={[
           "At CompQsoft, we're driven by purpose—creating value, delivering innovation, and making a real difference. Our team thrives on transforming ideas into impactful solutions that shape the future. If you're passionate about Microsoft technologies and want to work where your skills spark meaningful change, there's no better place to be. Join us to deliver transformative outcomes, grow with purpose, and be part of something extraordinary."
         ]}
