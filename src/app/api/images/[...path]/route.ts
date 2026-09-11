@@ -4,10 +4,11 @@ import path from 'path';
 
 export async function GET(
   request: Request,
-  { params }: { params: { path: string[] } }
+  { params }: { params: Promise<{ path: string[] }> }
 ) {
   try {
-    const filenamePath = params.path.join('/');
+    const resolvedParams = await params;
+    const filenamePath = resolvedParams.path.join('/');
     
     // Define data directory
     const DATA_DIR = process.env.DATA_DIR || path.join(process.cwd(), 'public');
