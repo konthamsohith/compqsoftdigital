@@ -1,7 +1,7 @@
 .heroSection {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 210px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -11,16 +11,6 @@
   object-fit: cover;
   object-position: center;
   z-index: 1;
-}
-
-.imageOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%);
-  z-index: 2;
 }
 
 .contentContainer {
@@ -34,7 +24,7 @@
 
 .heroTitle {
   color: #ffffff;
-  font-size: 3.5rem;
+  font-size: 2.75rem;
   font-weight: 700;
   line-height: 1.2;
   overflow-wrap: break-word;
@@ -42,7 +32,7 @@
 
 @media (max-width: 768px) {
   .heroSection {
-    height: 250px;
+    height: 190px;
   }
 
   .contentContainer {
@@ -50,13 +40,13 @@
   }
 
   .heroTitle {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 }
 
 @media (max-width: 480px) {
   .heroSection {
-    height: 220px;
+    height: 160px;
   }
 
   .contentContainer {
@@ -64,6 +54,6 @@
   }
 
   .heroTitle {
-    font-size: 1.85rem;
+    font-size: 1.6rem;
   }
 }
