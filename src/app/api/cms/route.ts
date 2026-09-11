@@ -3,8 +3,11 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+// Define data directory
+const DATA_DIR = process.env.DATA_DIR || process.cwd();
+
 // Path to the data file
-const dataFilePath = path.join(process.cwd(), 'parsed_posts.json');
+const dataFilePath = path.join(DATA_DIR, 'parsed_posts.json');
 
 // Helper to read data
 function readData() {

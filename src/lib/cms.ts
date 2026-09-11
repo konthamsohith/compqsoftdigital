@@ -4,7 +4,9 @@ import path from 'path';
 // Note: In Next.js App Router Server Components, it is safe to read the file system directly.
 // This avoids issues with absolute URLs during build time fetch calls.
 
-const dataFilePath = path.join(process.cwd(), 'parsed_posts.json');
+// Define data directory
+const DATA_DIR = process.env.DATA_DIR || process.cwd();
+const dataFilePath = path.join(DATA_DIR, 'parsed_posts.json');
 
 export function getCMSData() {
   try {

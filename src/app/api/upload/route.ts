@@ -20,8 +20,9 @@ export async function POST(request: Request) {
     const filename = file.name.replace(/[^a-zA-Z0-9.]/g, '_');
     const savedFilename = `${uniqueSuffix}-${filename}`;
     
-    // Save to public/uploads directory
-    const uploadDir = path.join(process.cwd(), 'public', 'uploads');
+    // Define data directory and save to uploads folder inside it
+    const DATA_DIR = process.env.DATA_DIR || path.join(process.cwd(), 'public');
+    const uploadDir = path.join(DATA_DIR, 'uploads');
     
     if (!fs.existsSync(uploadDir)) {
       fs.mkdirSync(uploadDir, { recursive: true });
@@ -30,8 +31,8 @@ export async function POST(request: Request) {
     const filePath = path.join(uploadDir, savedFilename);
     await writeFile(filePath, buffer);
     
-    // Return the public URL
-    const fileUrl = `/uploads/${savedFilename}`;
+    // Return the dynamic API URL instead of static public URL
+    const fileUrl = `/api/images/${savedFilename}`;
     
     return NextResponse.json({ url: fileUrl }, { status: 201 });
   } catch (error) {
