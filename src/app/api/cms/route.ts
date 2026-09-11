@@ -3,15 +3,11 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-// Define data directory
-const DATA_DIR = process.env.DATA_DIR || process.cwd();
-
-// Path to the data file
-const dataFilePath = path.join(DATA_DIR, 'parsed_posts.json');
-
 // Helper to read data
 function readData() {
   try {
+    const DATA_DIR = process.env.DATA_DIR || process.cwd();
+    const dataFilePath = path.join(DATA_DIR, 'parsed_posts.json');
     const fileContent = fs.readFileSync(dataFilePath, 'utf-8');
     return JSON.parse(fileContent);
   } catch (error) {
@@ -29,6 +25,8 @@ function readData() {
 // Helper to write data
 function writeData(data: any) {
   try {
+    const DATA_DIR = process.env.DATA_DIR || process.cwd();
+    const dataFilePath = path.join(DATA_DIR, 'parsed_posts.json');
     fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2), 'utf-8');
     return true;
   } catch (error) {
